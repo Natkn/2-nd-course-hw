@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -102,7 +110,7 @@ line-height: 34px;
 }
 
 .header-big-upline{
-    padding-left: 22%;
+    padding-left: 17%;
     position: absolute;
 display: flex;
 }
@@ -111,13 +119,13 @@ display: flex;
     position: absolute;
     display: flex;
     padding-top: 254px;
-    padding-left: 70%;
+    padding-left: 64%;
     
 }
 
 
 .header-big-dline{
-    padding-left: 142%;
+    padding-left: 136%;
     position: absolute;
     padding-top: 379px;
     padding-left: px;
@@ -129,28 +137,28 @@ display: flex;
     position: absolute;
     display: flex;
     padding-top: 660px;
-    padding-left: 154%;
+    padding-left: 148%;
 }
 
 .header-big-smallstar{
     padding-top: 538px;
-    padding-left: 120%;
+    padding-left: 92%;
   
 }
 
 .header-big-star{
     padding-top: 568px;
-    padding-left: 25%;
+    padding-left: 24%;
 }
 
 .header-big-tri{
     position: absolute;
 padding-top: 468px;
-padding-left: 126%;
+padding-left: 120%;
 }
 .header-bigstar{
     width: 413px;
-    padding-left: 3%;
+    
 
 }
 
@@ -178,7 +186,7 @@ justify-content: center;
 }
 
 .main{
-    background: url(./img/mainstar\ \(1\).png) right top 107px no-repeat,
+    background: url(./img/mainstar.svg) right top 107px no-repeat,
      url(./img/mainstarsmall.svg) left 25px top 770px no-repeat ,
       url(./img/mainstarbig.svg)left 40px top 822px no-repeat ;
 }
