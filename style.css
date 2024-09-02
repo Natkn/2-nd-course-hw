@@ -393,6 +393,10 @@ a {
   cursor: pointer;
 }
 
+.header-mob {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -410,7 +414,10 @@ a {
   }
   .header-starmini {
     width: 21px;
+    position: absolute;
     height: 21px;
+    top: -2%;
+    left: 15%;
   }
   .header-heading {
     text-align: center;
@@ -425,14 +432,14 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 21px;
     width: 296px;
   }
   .header-button {
     width: 285px;
     font-size: 16px;
     line-height: 23px;
-    margin-top: 12px;
+    margin-top: 8px;
   }
   .header-box-scroll svg {
     width: 21px;
@@ -447,7 +454,8 @@ a {
     text-transform: uppercase;
     height: 51px;
     padding-left: 17px;
-    margin-top: 141px;
+    margin-top: 132px;
+    gap: 27.4px;
   }
   .mini-games-heading {
     padding-top: 48px;
@@ -461,6 +469,8 @@ a {
   }
   .header-star {
     position: absolute;
+    left: -7%;
+    top: -1%;
   }
   .header-big-upline,
   .header-big-midline,
@@ -482,6 +492,7 @@ a {
   .header-big-smallstar {
     position: absolute;
     right: 86px;
+    top: 4%;
   }
   .header-big-star svg {
     width: 39px;
@@ -489,7 +500,12 @@ a {
   }
   .header-big-star {
     position: absolute;
-    right: 34px;
+    right: 32px;
+    top: 2%;
+  }
+  .header-mob {
+    display: block;
+    position: absolute;
   }
   .header-info {
     align-items: center;
@@ -505,6 +521,7 @@ a {
     align-items: center;
     margin-bottom: 48px;
     padding-top: 48px;
+    gap: 24px;
   }
   .game-card {
     display: flex;
@@ -517,6 +534,7 @@ a {
     justify-content: center;
   }
   .game-card img {
+    border-radius: 30px;
     width: 343px;
   }
   .main-games-info {
@@ -529,6 +547,18 @@ a {
     line-height: 39px;
   }
   .main-games-under-text {
+    width: 246px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .text-mob,
+  .text-vicmob {
+    width: 280px;
+  }
+  .text-lastmob {
+    width: 245px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -542,7 +572,7 @@ a {
     font-size: 16px;
     font-style: normal;
     line-height: 23px;
-    margin-top: 16px;
+    margin-top: 14px;
   }
   .header-games-button:hover {
     background: black;
