@@ -157,7 +157,10 @@ padding-left: 120%;
 .header-bigstar{
     width: 413px;
     
+}
 
+.header-big-mobile{
+    display: none;
 }
 
 .header-box-scroll{
@@ -416,3 +419,6 @@ justify-content: center;
     cursor: pointer;
    
   }
+
+
+  @import 'mobilestyle';
