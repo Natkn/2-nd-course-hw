@@ -30,7 +30,6 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  width: 769px;
 }
 
 .main-box-undertext {
@@ -305,6 +304,7 @@ a {
   flex-direction: column;
   gap: 32px;
   margin-bottom: 144px;
+  flex-wrap: wrap;
 }
 
 .main-games-card-gen,
