@@ -175,7 +175,7 @@
 }
 
 .main {
-  background: url(./img/mainstar.svg) right top 107px no-repeat, url(./img/mainstarsmall.svg) left 25px top 770px no-repeat, url(./img/mainstarbig.svg) left 40px top 822px no-repeat, url(./img/gamessmallstar.svg) right 124px top 1572px no-repeat, url(./img/gamesbigstar.svg) right 45px top 1605px no-repeat, url(./img/0footersmallstar.svg) right 149px top 4890px no-repeat, url(./img/footerbigstar.svg) right 51px top 4846px no-repeat;
+  background: url(./img/mainstar.svg) right top 107px no-repeat, url(./img/mainstarsmall.svg) left 25px top 770px no-repeat, url(./img/mainstarbig.svg) left 40px top 822px no-repeat, url(./img/gamessmallstar.svg) right 124px top 1572px no-repeat, url(./img/gamesbigstar.svg) right 45px top 1605px no-repeat, url(./img/0footersmallstar.svg) right 149px bottom 195px no-repeat, url(./img/footerbigstar.svg) right 51px bottom 215px no-repeat;
 }
 
 .main {
