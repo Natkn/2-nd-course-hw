@@ -19,13 +19,15 @@
 }
 
 .header-info{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 24px;
-    padding-top: 196px;
-padding-left: 120px;
+    padding-top: 221px;
+    margin-left: 305px;
+    
+    
 }
 
 .header-heading{
@@ -34,6 +36,7 @@ font-family: Montserrat;
 font-size: 64px;
 font-weight: 700;
 line-height: 78px;
+width: 769px;
 }
 
 .main-box-undertext{
@@ -52,7 +55,7 @@ border-radius: 60px;
 border: 1px solid #202027;
 background: #202027;
 display: flex;
-width: 247px;
+width: 190px;
 padding: 16px 28px;
 justify-content: center;
 color: #FFF;
@@ -78,6 +81,7 @@ line-height: 34px;
 }
 
 .header-stars{
+    position: absolute;
     display: flex;
 }
 
@@ -96,66 +100,23 @@ line-height: 34px;
     padding-left: 63px;
 }
 
-.header-big{
-    display: flex;
-    position: relative;
-}
-
-.header-big-lines{
-    display: flex;
-    justify-content: center;
-}
-
-.header-big-upline{
-    padding-left: 17%;
-    position: absolute;
-display: flex;
-}
-
-.header-big-midline{
-    position: absolute;
-    display: flex;
-    padding-top: 254px;
-    padding-left: 64%;
-    
-}
-
-
-.header-big-dline{
-    padding-left: 136%;
-    position: absolute;
-    padding-top: 379px;
-    padding-left: px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.header-big-line{
-    position: absolute;
-    display: flex;
-    padding-top: 660px;
-    padding-left: 148%;
-}
-
 .header-big-smallstar{
-    padding-top: 538px;
-    padding-left: 92%;
-  
+    position: absolute;
+    top: 538px;
+    left: 66%;
 }
 
 .header-big-star{
-    padding-top: 568px;
-    padding-left: 24%;
+    position: absolute;
+    top: 68%;
+    left: 70%;
+    
 }
 
-.header-big-tri{
-    position: absolute;
-padding-top: 468px;
-padding-left: 120%;
-}
-.header-bigstar{
-    width: 413px;
-    
+
+.group-stars{
+    position:absolute;
+    right: 0;
 }
 
 .header-big-mobile{
@@ -163,12 +124,12 @@ padding-left: 120%;
 }
 
 .header-box-scroll{
-    padding-left: 19px;
+    position: absolute;
+    top: 710px;
     border: 1px solid rgba(255, 255, 255, 0.20);
 background: #BCEC30;
 backdrop-filter: blur(25px);
 height: 90px;
-margin-top: 59px;
 color: #202027;
 font-family: Montserrat;
 font-size: 30px;
@@ -183,6 +144,7 @@ display: inline-flex;
 flex-direction: column;
 gap: 51px;
 justify-content: center;
+padding-left: 19px;
 }
 
 .main{
@@ -200,7 +162,7 @@ justify-content: center;
 }
 
 .main-box{
-    padding-left: 119px;
+    
     padding-top: 94px;
     display: flex;
     flex-direction: column;
@@ -216,6 +178,7 @@ font-size: 64px;
 font-weight: 700;
 line-height: 78px;
 }
+
 
 .main-box-under{
     color: #FFF;
@@ -300,10 +263,7 @@ display: block;
     align-self: end;
 }
 
-.main-box-cart-rock, 
-.main-box-cart-gen {
-    height: 551px;
-}
+
 
 
 a{
