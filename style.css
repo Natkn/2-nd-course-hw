@@ -207,6 +207,12 @@
 }
 
 .main-box-text {
+  border-radius: 52.582px;
+  background: #F7F7F7;
+  width: 107px;
+  padding: 8px 16px 10px 16px;
+  display: flex;
+  justify-content: center;
   color: #202027;
   font-family: Montserrat;
   font-size: 16px;
