@@ -1,4 +1,5 @@
 
+
 function showTextGame() {
 let answer = 73;
 while (true) {
@@ -13,3 +14,9 @@ while (true) {
     }
 }
 }
+
+
+
+
+
+
