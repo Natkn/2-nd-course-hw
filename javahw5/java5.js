@@ -15,9 +15,9 @@ for (let i = 0; i < numbers.length; i++) {
 
 //РЕШЕНИЕ ЗАДАЧИ 2
 
-const  array = [1, 5, 4, 10, 0, 3];
+const  nums = [1, 5, 4, 10, 0, 3];
 
-let i = array.indexOf(4);
+let i = nums.indexOf(4);
 
 console.log(i);
 
@@ -25,16 +25,16 @@ console.log(i);
 
 //РЕШЕНИЕ ЗАДАЧИ 3
 
-const  array = [1, 3, 5, 10, 20];
+const  mass = [1, 3, 5, 10, 20];
 
-let joinedNum = array.join(" ");
+let joinedNum = mass.join(" ");
 console.log(joinedNum);
 
 
 
 //РЕШЕНИЕ ЗАДАЧИ 4
 
-const arr = [];
+const masive = [];
 
 for (let i = 0; i < 3; i++) {
   arr[i] = [];
@@ -43,36 +43,36 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-console.log(arr); 
+console.log(masive); 
 
 
 //РЕШЕНИЕ ЗАДАЧИ 5
 
-const num = [1, 1, 1];
+const numberOne = [1, 1, 1];
 
-  num.push(2, 2, 2);
+numberOne.push(2, 2, 2);
 
-console.log(num);
+console.log(numberOne);
 
 
 //РЕШЕНИЕ ЗАДАЧИ 6
 
-const arr = [9, 8, 7, 'a', 6, 5];
+const del = [9, 8, 7, 'a', 6, 5];
 
-arr.sort();
-arr.pop();
+del.sort();
+del.pop();
 
-console.log(arr);
+console.log(del);
 
 
 
 //РЕШЕНИЕ ЗАДАЧИ 7
 
-const  num = [9, 8, 7, 6, 5];
+const  guess = [9, 8, 7, 6, 5];
 
 let userAnswer = +prompt(`Угадай число`);
 
-if (num.includes(+userAnswer))  {
+if (guess.includes(+userAnswer))  {
     alert(`Угадал`);
 } else  {
     alert('Не угадал');
@@ -87,19 +87,19 @@ const str = 'abcdef';
 let reversed = str.split('').reverse().join(''); 
 console.log(reversed); 
 
-const Array = [[1, 2, 3], [4, 5, 6]];
-const singleArray = Array.flat();
+const massTwo = [[1, 2, 3], [4, 5, 6]];
+const singlenum = massTwo.flat();
 
-console.log(singleArray);
+console.log(singlenum);
 
 
 
 //РЕШЕНИЕ ЗАДАЧИ 9
 
-const numbers = [3, 7, 1, 9, 5, 2, 10];
+const sumNum = [3, 7, 1, 9, 5, 2, 10];
 
-for (let i = 0; i < numbers.length - 1; i++) {
-  const sum = numbers[i] + numbers[i + 1];
+for (let i = 0; i < sumNum.length - 1; i++) {
+  const sum = sumNum[i] + sumNum[i + 1];
   
   console.log(`${sum}`);
 }
@@ -109,9 +109,9 @@ for (let i = 0; i < numbers.length - 1; i++) {
 
 //РЕШЕНИЕ ЗАДАЧИ 10
 
-const numbers = [3, 7, 2, 9];
+const duble = [3, 7, 2, 9];
 
-let multi = numbers[i] * numbers[i];
+let multi = duble[i] * duble[i];
 
 console.log(`${multi}`);
 
@@ -119,14 +119,14 @@ console.log(`${multi}`);
 
 //РЕШЕНИЕ ЗАДАЧИ 11
 
-function squareArray(numbers) {
+function squareNum(numbers) {
   return numbers.map(number => number * number);
 }
 
-const Array = [2,6,9,7];
-const squaredArray = squareArray(Array);
+const count = [2,6,9,7];
+const squareNum = squareNum(count);
 
-console.log(squaredArray); 
+console.log(squareNum); 
 
 
 
@@ -149,8 +149,8 @@ function getWordLengths(words) {
     return numbers.filter(number => number < 0);
   }
   
-  const numbers = [ -2, 3, -4, 5];
-  const negativeNumbers = getNegativeNumbers(numbers);
+  const negative = [ -2, 3, -4, 5];
+  const negativeNumbers = getNegativeNumbers(negative);
   
   console.log(negativeNumbers);
 
@@ -159,15 +159,15 @@ function getWordLengths(words) {
 
 //РЕШЕНИЕ ЗАДАЧИ 14
 
-  const numbers = [];
+  const slot = [];
 
 for (let i = 0; i < 10; i++) {
-  numbers.push(Math.floor(Math.random() * 11)); 
+  slot.push(Math.floor(Math.random() * 11)); 
 }
 
-const evenNumbers = numbers.filter(number => number % 2 === 0);
+const evenNumbers = slot.filter(number => number % 2 === 0);
 
-console.log(`Исходный массив:`, numbers);
+console.log(`Исходный массив:`, slot);
 console.log(`Массив с четными числами:`, evenNumbers);
 
 
@@ -175,14 +175,14 @@ console.log(`Массив с четными числами:`, evenNumbers);
 
 //РЕШЕНИЕ ЗАДАЧИ 15
 
-const numbers = [];
+const empty = [];
 
 for (let i = 0; i < 6; i++) {
-  numbers.push(Math.floor(Math.random() * 10) + 1); 
+  empty.push(Math.floor(Math.random() * 10) + 1); 
 }
 
 
-const average = numbers.reduce((sum, number) => sum + number, 0) / numbers.length;
+const average = empty.reduce((sum, number) => sum + number, 0) / empty.length;
 
-console.log("Массив:", numbers);
+console.log("Массив:", empty);
 console.log("Среднее арифметическое:", average);
