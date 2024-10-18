@@ -3,6 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    // Solution 1
+
+
+<h1 id="myHeader">Lorem ipsum dolor sit amet.</h1>
+<button id="myButton">Hide</button>
+        
+<script>
+    
+    const header = document.querySelector('#myHeader');
+    const button = document.querySelector('#myButton');
+        
+    button.addEventListener('click', () => {
+  
+if (header.style.display === 'none') {
+        header.style.display = 'block'; 
+        button.textContent = 'Hide'; 
+ } else {
+         header.style.display = 'none'; 
+         button.textContent = 'Show'; 
+ }
+
+ });
+ </script>
+
+
+
+// Solution 2
+
+
+<p class="text">Lorem ipsum dolor sit amet.</p>
+    <button class ="myButton">Change color</button>
+            
+    <script>
+         const textEl = document.querySelector(`.text`);
+         const  myButtonEl = document.querySelector(`.myButton`);
+       
+
+
+
+         myButtonEl.addEventListener('click', () => {
+
+      if (textEl.style.color === 'blue') {
+        textEl.style.color = 'black';
+        myButtonEl.textContent = 'Change color';
+      } else {
+        textEl.style.color = 'blue';
+      }
+      
+    });
+
+</script>
+
+
+
+// Solution 3
+
+
+<h1 class="text">Lorem ipsum dolor sit amet.</h1>
+<button class ="myButton">Change text</button>
+        
+<script>
+
+const textEl = document.querySelector(`.text`);
+const myButtonEl = document.querySelector(`.myButton`);
+
+
+
+myButtonEl.addEventListener(`click`, () =>{
+
+if ( textEl) {
+textEl.textContent= 'Привет, мир!';
+} 
+
+});
+</script>
+
+
+
+
+// Solution 4
+
+<h1 class="text">Lorem ipsum dolor sit amet.</h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit.</p>
+    <p class="description">Lorem ipsum dolor sit amet.</p>
+    <button class ="myButton">Change text</button>
+            
+    <script>
+
+const textEl = document.querySelector(`.text`);
+const myButtonEl = document.querySelector(`.myButton`);
+const allDescriptions = document.querySelectorAll('.description');
+
+
+ 
+myButtonEl.addEventListener(`click`, () =>{
+
+    allDescriptions.forEach(description => {
+        description.textContent = 'Измененный текст';
+    })
+    
+});
+    </script>
+
+
+
+
+// Solution 5
+
+<h1 class="text">Lorem ipsum dolor sit amet.</h1>
+<p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+<p class="paragraph">Lorem ipsum dolor sit.</p>
+<p class="description">Lorem ipsum dolor sit amet.</p>
+<p class="description">Lorem ipsum.</p>
+<p class="underText">Lorem ipsum dolor.</p>
+<button class ="myButton">Change text</button>
+        
+<script>
+
+const textEl = document.querySelector(`.text`);
+const myButtonEl = document.querySelector(`.myButton`);
+const allDescriptions = document.querySelectorAll('.description');
+
+
+
+myButtonEl.addEventListener(`click`, () =>{
+
+allDescriptions.forEach(description => {
+    description.textContent = 'Новый текст';
+})
+
+});
+</script>
+
+
+
+
+
+// Solution 6
+
+
+<h1 class="text">Lorem ipsum dolor sit amet.</h1>
+<p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+<p class="description">Lorem ipsum dolor sit.</p>
+<p class="description">Lorem ipsum dolor sit amet.</p>
+<button class ="myButton">Добавить элемент</button>
+        
+<script>
+
+const myButtonEl = document.querySelector(`.myButton`);
+const allDescriptions = document.querySelectorAll('.description');
+const newDiv = document.createElement('div');
+
+newDiv.textContent = 'Новый абзац';
+
+
+
+myButtonEl.addEventListener(`click`, () =>{
+
+document.body.appendChild(newDiv);
+});
+</script>
+
+
+
+
+// Solution 7
+
+
+<h1 class="text">Lorem ipsum dolor sit amet.</h1>
+<p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+<p class="paragraph">Lorem ipsum dolor sit.</p>
+<p class="description">Lorem ipsum dolor sit amet.</p>
+<button class ="myButton">Удалить элемент</button>
+
+<script>
+
+
+    const myButtonEl = document.querySelector(`.myButton`);
+    
+
+    myButtonEl.addEventListener(`click`, () =>{
+    
+        const paragraph = document.querySelector('.description');
+        paragraph.firstChild.remove()
+        }
+    );
+</script>
+     
+
     <title>Games</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -203,5 +399,6 @@
    <script src="javagame4.js"></script>
    <script src="javagame5.js"></script>
     
+
 </body>
 </html>
