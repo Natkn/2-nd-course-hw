@@ -5,19 +5,19 @@
         padding-right: 16px;
     }
 
-.header-box{
+.header__box{
 height: 700px};
 
     .main-page{
         display: none;
     }
 
-    .header-star{
+    .header__star{
         width: 35px;
         height: 35px;
     }
 
-    .header-starmini{
+    .header__starmini{
         width: 21px;
         position: absolute;
         height: 21px;
@@ -29,7 +29,7 @@ height: 700px};
         display: none;
     }
 
-    .header-heading{
+    .header__heading{
 text-align: center;
 font-size: 40px;
 font-style: normal;
@@ -38,7 +38,7 @@ line-height: 49px;
 width: 262px;
     }
 
-.main-box-undertext{
+.main-box__undertext{
 text-align: center;
 font-size: 16px;
 font-style: normal;
@@ -47,7 +47,7 @@ line-height: 21px;
 width: 296px;
 }
 
-.header-button{
+.header__button{
     width: 225px;
     font-size: 16px;
     line-height: 23px;
@@ -58,12 +58,12 @@ width: 296px;
 
 
 
-.header-box-scroll svg{
+.header__box-scroll svg{
     width: 21px;
     height: 21px;
 }
 
-.header-box-scroll{
+.header__box-scroll{
     top: 649px;
     height: 51px;
     display: flex;
@@ -71,7 +71,7 @@ width: 296px;
 
 }
 
-.header-box-scroll li{
+.header__box-scroll li{
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -91,7 +91,7 @@ margin-right: 6px;
     margin-right: 0px;
 }
 
-.mini-games-heading{
+.mini-games__heading{
     padding-top: 48px;
     font-size: 40px;
     font-style: normal;
@@ -106,29 +106,29 @@ margin-right: 6px;
 
 }
 
-.header-star{
+.header__star{
     position: relative;
     right: 30%;
     bottom: 8px;
     
 }
 
-.header-big-upline,
-.header-big-midline,
-.header-big-dline,
-.header-big-tri,
-.header-big-line,
-.header-bigstar{
+.header__big-upline,
+.header__big-midline,
+.header__big-dline,
+.header__big-tri,
+.header__big-line,
+.header__bigstar{
     display: none;
 }
 
-.header-big-lines{
+.header__big-lines{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.header-big-smallstar svg{
+.header__big-smallstar svg{
     width: 18px;
     height: 18px;
     position: relative;
@@ -136,32 +136,32 @@ margin-right: 6px;
 
 }
 
-.header-big-smallstar{
+.header__big-smallstar{
     position: absolute;
  
     top: 62.5%;
 }
 
 
-.header-big-star svg{
+.header__big-star svg{
    width: 39px;
    height: 41px;
   
 }
-.header-big-star{
+.header__big-star{
     position: absolute;
     left: 80%;
         top: 65%;
     
 }
 
-.header-mob{
+.header__mob{
     display: block;
     position: absolute;
 }
 
 
-.header-info {
+.header__info {
     align-items: center;
     position: relative;
     display: flex;
@@ -172,7 +172,7 @@ margin-right: 6px;
     padding-left: 10%;
 }
 
-.mini-games-cards{
+.mini-games__cards{
     align-items: center;
     margin-bottom: 48px;
     padding-top: 48px;
@@ -195,17 +195,17 @@ margin-right: 6px;
     width: 343px;
 }
 
-.main-games-info{
+.main-games__info{
     justify-content: center;
     padding: 29px 29px 32px 29px ;
     gap: 16px;
 }
 
-.main-games-text{
+.main-games__text{
 font-size: 32px;
 line-height: 39px;
 }
-.main-games-under-text{
+.main-games__under-text{
     width: 246px;
 font-size: 16px;
 font-style: normal;
@@ -227,7 +227,7 @@ line-height: 20px;
 }
 
 
-.header-games-button{
+.header__games-button{
 display: flex;
 width: 285px;
 gap: 10px;

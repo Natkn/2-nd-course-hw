@@ -12,26 +12,23 @@
     }
 
 
-.header-box{
+.header__box{
   height: 800px;
     background-color: rgba(225, 255, 143, 1);
     background-repeat: no-repeat;
 }
 
-.header-info{
+.header__info{
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 24px;
-    padding-top: 221px;
-    padding-left: 305px;
-    
-    
-    
+    padding-top: 221px; 
+    z-index: 1;
 }
 
-.header-heading{
+.header__heading{
     color: #202027;
 font-family: Montserrat;
 font-size: 64px;
@@ -40,7 +37,7 @@ line-height: 78px;
 
 }
 
-.main-box-undertext{
+.main-box__undertext{
     width: 720px;
     color: #202027;
 font-family: Montserrat;
@@ -50,7 +47,7 @@ font-weight: 400;
 line-height: 32px; 
 }
 
-.header-button{
+.header__button{
     margin-top: 24px;
 border-radius: 60px;
 border: 1px solid #202027;
@@ -64,29 +61,32 @@ font-family: Montserrat;
 font-size: 24px;
 font-weight: 600;
 line-height: 34px; 
+transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.2s ease;
+
 }
 
 
-.header-button:hover {
+.header__button:hover {
  
     background: white;
     color: black;
     cursor: pointer;
    
+   
   }
 
-.header-img{
+.header__img{
     display: flex;
     justify-content: space-between;
    
 }
 
-.header-stars{
+.header__stars{
     position: absolute;
     display: flex;
 }
 
-.header-starmini{
+.header__starmini{
     width: 35px;
     display: flex;
     padding-top: 69px;
@@ -94,20 +94,20 @@ line-height: 34px;
 }
 
 
-.header-star{
+.header__star{
     width: 57px;
     display: flex;
     padding-top: 94px;
     padding-left: 63px;
 }
 
-.header-big-smallstar{
+.header__big-smallstar{
     position: absolute;
     top: 538px;
     left: 66%;
 }
 
-.header-big-star{
+.header__big-star{
     position: absolute;
     top: 568px;
     left: 70%;
@@ -115,16 +115,17 @@ line-height: 34px;
 }
 
 
-.group-stars{
+.header__group-stars{
     position:absolute;
     right: 0;
+    z-index: 0;
 }
 
-.header-big-mobile{
+.header__big-mobile{
     display: none;
 }
 
-.header-box-scroll {
+.header__box-scroll {
     position: absolute;
     top: 710px;
     width: 99.77%;
@@ -144,7 +145,7 @@ line-height: 34px;
 
   }
   
-  .header-box-scroll ul {
+  .header__box-scroll ul {
     width: 100%;
     margin: 0;
     padding: 0; 
@@ -152,7 +153,7 @@ line-height: 34px;
   }
   
   
-  .header-box-scroll li {
+  .header__box-scroll li {
  
     margin-right: 10px;
     padding: 27px 10px;
@@ -178,7 +179,7 @@ transition: opacity 0.3s ease;
     }
   }
   
-  .header-box-scroll ul {
+  .header__box-scroll ul {
     animation: scroll 10s linear ;
   }
 
@@ -214,7 +215,7 @@ transition: opacity 0.3s ease;
 
 
 
-.main-box-heading{
+.main-box__heading{
     color: #FFF;
 font-family: Montserrat;
 font-size: 64px;
@@ -223,7 +224,7 @@ line-height: 78px;
 }
 
 
-.main-box-under{
+.main-box__under{
     color: #FFF;
 font-family: Montserrat;
 font-size: 24px;
@@ -232,7 +233,7 @@ line-height: 32px;
 margin-bottom: 72px;
 }
 
-.main-box-cart{
+.main-box__cart{
     display: flex;
     justify-content: space-between;
     column-gap: 32px;
@@ -248,14 +249,14 @@ margin-bottom: 72px;
 
 }
 .card:hover{
-
+transition: 0.3s;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
       -o-transform: scale(1.1);
       -moz-transform: scale(1.1);
   }
 
-.main-box-info{
+.main-box__info{
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -264,7 +265,7 @@ padding: 32px 32px 36px 32px;
 
 }
 
-.main-box-text{
+.main-box__text{
     padding-left: 16px;
     color: #202027;
 font-family: Montserrat;
@@ -273,11 +274,11 @@ font-weight: 500;
 line-height: 110%; 
 }
 
-.main-box-text{
+.main-box__text{
     border-radius: 52.582px;
     background: #F7F7F7;
     width: 107px;
-    padding: 0px 8px 2px 0px;
+    padding: 8px 16px 10px 16px;
     display: flex;
    justify-content: center;
     color: #202027;
@@ -289,7 +290,7 @@ line-height: 17.6px;
 }
 
 
-.main-box-under-text{
+.main-box__under-text{
     color: #202027;
 font-family: Montserrat;
 font-size: 32px;
@@ -297,17 +298,17 @@ font-weight: 700;
 line-height: 39px;
 }
 
-.main-box-cart-number,
-.main-box-cart-text{
+.main-box__cart-number,
+.main-box__cart-text{
 height: 473px;
 }
 
-.main-box-cart-game,
-.main-box-cart-vic{
+.main-box__cart-game,
+.main-box__cart-vic{
     height: 510px;
 }
 
-.main-box-cart-vic{
+.main-box__cart-vic{
 display: block;
     align-self: end;
 }
@@ -321,7 +322,7 @@ a{
 
 
 
-.mini-games-heading{
+.mini-games__heading{
     color: #FFF;
 font-family: Montserrat;
 font-size: 64px;
@@ -329,12 +330,12 @@ font-style: normal;
 font-weight: 700;
 line-height: 78px;
 padding-top: 70px;
-margin-left: 55px;
+
 }
 
 
 
-.mini-games-cards{
+.mini-games__cards{
     padding-top: 72px;
     display: flex;
     flex-direction: column;
@@ -343,11 +344,11 @@ margin-left: 55px;
     flex-wrap: wrap;
 }
 
-.main-games-card-gen,
-.main-games-card-rock,
-.main-games-card-game{
-    margin-left: 55px;
-    width: 87%; 
+.main__games-card-gen,
+.main__games-card-rock,
+.main__games-card-game{
+  
+    width: 100%; 
     background-repeat: no-repeat;
    background-color: #FFF;
    border-radius: 30px;
@@ -355,11 +356,11 @@ margin-left: 55px;
 
 }
 
-.main-games-card-number,
- .main-games-card-text,
- .main-games-card-vic{
-    margin-left: 55px;
-    width: 87%;
+.main-games__card-number,
+ .main__games-card-text,
+ .main__games-card-vic{
+   
+    width: 100%;
     background-repeat: no-repeat;
    background-color: #FFF;
    border-radius: 30px;
@@ -368,7 +369,7 @@ margin-left: 55px;
    justify-content: space-between;
 }
 
-.main-games-info{
+.main-games__info{
     display: flex;
 width: 600px;
 padding: 48px;
@@ -377,7 +378,7 @@ align-items: flex-start;
 gap: 24px;
 }
 
-.main-games-text{
+.main-games__text{
     color: #202027;
 font-family: Montserrat;
 font-size: 48px;
@@ -386,7 +387,7 @@ font-weight: 700;
 line-height: 59px;
 }
 
-.main-games-under-text{
+.main-games__under-text{
 color: #202027;
 font-family: Montserrat;
 font-size: 24px;
@@ -421,7 +422,7 @@ justify-content: center;
 
 }
 
-.header-games-button{
+.header__games-button{
     margin-top: 12px;
     border-radius: 60px;
     border: 1px solid #202027;
@@ -435,9 +436,10 @@ justify-content: center;
     font-size: 24px;
     font-weight: 600;
     line-height: 34px; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.2s ease;
 }
 
-.header-games-button:hover {
+.header__games-button:hover {
  
     background: white;
     color: black;
@@ -445,7 +447,7 @@ justify-content: center;
    
   }
 
-  .header-mob{
+  .header__mob{
     display: none
   }
 
