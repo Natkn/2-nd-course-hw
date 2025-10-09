@@ -5,31 +5,27 @@
         padding-right: 16px;
     }
 
-.header__box{
+.header-box{
 height: 700px};
 
     .main-page{
         display: none;
     }
 
-    .header__star{
+    .header-star{
         width: 35px;
         height: 35px;
     }
 
-    .header__starmini{
+    .header-starmini{
         width: 21px;
         position: absolute;
         height: 21px;
-        top: -9%;
-        left: 52%;
+        top: -2%;
+        left: 15%;
     }
 
-    .group-stars{
-        display: none;
-    }
-
-    .header__heading{
+    .header-heading{
 text-align: center;
 font-size: 40px;
 font-style: normal;
@@ -38,7 +34,7 @@ line-height: 49px;
 width: 262px;
     }
 
-.main-box__undertext{
+.main-box-undertext{
 text-align: center;
 font-size: 16px;
 font-style: normal;
@@ -47,57 +43,40 @@ line-height: 21px;
 width: 296px;
 }
 
-.header__button{
-    width: 225px;
-    font-size: 16px;
-    line-height: 23px;
-    margin-top: 8px;
-    margin-left: 5px;
+.header-button{
+width: 285px;
+font-size: 16px;
+line-height: 23px;
+margin-top: 8px;
 }
 
 
 
 
-.header__box-scroll svg{
+.header-box-scroll svg{
     width: 21px;
     height: 21px;
 }
 
-.header__box-scroll{
-    top: 649px;
-    height: 51px;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.header__box-scroll li{
+.header-box-scroll{
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: 110%;
 letter-spacing: 0.64px;
 text-transform: uppercase;
-color: black;
 height: 51px;
-padding-left:12px ;
-padding-top: 15px;
-margin-right: 6px;
-
+padding-left:17px ;
+margin-top: 132px;
+gap: 27.4px;
 }
 
-.star{
-    margin-left: 26px;
-    margin-right: 0px;
-}
-
-.mini-games__heading{
+.mini-games-heading{
     padding-top: 48px;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 49px;
-    margin-left: 16px;
 }
 
 
@@ -106,62 +85,59 @@ margin-right: 6px;
 
 }
 
-.header__star{
-    position: relative;
-    right: 30%;
-    bottom: 8px;
-    
+.header-star{
+    position: absolute;
+    left: -7%;
+    top: -1%;
 }
 
-.header__big-upline,
-.header__big-midline,
-.header__big-dline,
-.header__big-tri,
-.header__big-line,
-.header__bigstar{
+.header-big-upline,
+.header-big-midline,
+.header-big-dline,
+.header-big-tri,
+.header-big-line,
+.header-bigstar{
     display: none;
 }
 
-.header__big-lines{
+.header-big-lines{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.header__big-smallstar svg{
+.header-big-smallstar svg{
     width: 18px;
     height: 18px;
-    position: relative;
-    left: 144%;
 
 }
 
-.header__big-smallstar{
+.header-big-smallstar{
     position: absolute;
- 
-    top: 62.5%;
+    right: 86px;
+    top: 4%;
 }
 
 
-.header__big-star svg{
+.header-big-star svg{
    width: 39px;
    height: 41px;
   
 }
-.header__big-star{
+.header-big-star{
     position: absolute;
-    left: 80%;
-        top: 65%;
+        right: 32px;
+        top: 2%;
     
 }
 
-.header__mob{
+.header-mob{
     display: block;
     position: absolute;
 }
 
 
-.header__info {
+.header-info {
     align-items: center;
     position: relative;
     display: flex;
@@ -169,10 +145,10 @@ margin-right: 6px;
     flex-wrap: wrap;
     gap: 24px;
     padding-top: 147px;
-    padding-left: 10%;
+    padding-left: 0;
 }
 
-.mini-games__cards{
+.mini-games-cards{
     align-items: center;
     margin-bottom: 48px;
     padding-top: 48px;
@@ -186,7 +162,6 @@ margin-right: 6px;
     width: 343px;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
     
 }
 
@@ -195,17 +170,17 @@ margin-right: 6px;
     width: 343px;
 }
 
-.main-games__info{
+.main-games-info{
     justify-content: center;
     padding: 29px 29px 32px 29px ;
     gap: 16px;
 }
 
-.main-games__text{
+.main-games-text{
 font-size: 32px;
 line-height: 39px;
 }
-.main-games__under-text{
+.main-games-under-text{
     width: 246px;
 font-size: 16px;
 font-style: normal;
@@ -227,7 +202,7 @@ line-height: 20px;
 }
 
 
-.header__games-button{
+.header-games-button{
 display: flex;
 width: 285px;
 gap: 10px;
@@ -243,8 +218,6 @@ margin-top: 14px;
     cursor: pointer;
 }
 }
-
-
 
 .fill{
 height: 100px;

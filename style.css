@@ -21,7 +21,6 @@
   flex-wrap: wrap;
   gap: 24px;
   padding-top: 221px;
-  padding-left: 305px;
 }
 
 .header-heading {
@@ -30,6 +29,7 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
+  width: 769px;
 }
 
 .main-box-undertext {
@@ -96,7 +96,7 @@
 
 .header-big-star {
   position: absolute;
-  top: 568px;
+  top: 68%;
   left: 70%;
 }
 
@@ -112,59 +112,26 @@
 .header-box-scroll {
   position: absolute;
   top: 710px;
-  width: 99.77%;
-  height: 90px;
-  background-color: #BCEC30;
-  background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  overflow-x: hidden;
-  overflow-y: hidden;
-  flex-wrap: wrap;
-  white-space: nowrap;
-  padding-left: 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 51px;
-  justify-content: flex-start;
-}
-
-.header-box-scroll ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.header-box-scroll li {
-  margin-right: 10px;
-  padding: 27px 10px;
-  border-radius: 5px;
-  list-style: none;
+  background: #BCEC30;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  height: 90px;
+  color: #202027;
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
   line-height: 110%;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  display: flex;
-  transition: opacity 0.3s ease;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.header-box-scroll ul {
-  animation: scroll 10s linear;
-}
-
-.star {
-  margin-left: 51px;
-  margin-right: 51px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 51px;
+  justify-content: center;
+  padding-left: 19px;
 }
 
 .main {
@@ -243,7 +210,7 @@
   border-radius: 52.582px;
   background: #F7F7F7;
   width: 107px;
-  padding: 0px 8px 2px 0px;
+  padding: 8px 16px 10px 16px;
   display: flex;
   justify-content: center;
   color: #202027;
@@ -269,7 +236,7 @@
 
 .main-box-cart-game,
 .main-box-cart-vic {
-  height: 510px;
+  height: 512px;
 }
 
 .main-box-cart-vic {
@@ -288,8 +255,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 78px;
-  padding-top: 70px;
-  margin-left: 55px;
+  padding-top: 96px;
 }
 
 .mini-games-cards {
@@ -297,15 +263,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 166px;
+  margin-bottom: 144px;
   flex-wrap: wrap;
 }
 
 .main-games-card-gen,
 .main-games-card-rock,
 .main-games-card-game {
-  margin-left: 55px;
-  width: 87%;
+  width: 100%;
   background-repeat: no-repeat;
   background-color: #FFF;
   border-radius: 30px;
@@ -315,8 +280,7 @@ a {
 .main-games-card-number,
 .main-games-card-text,
 .main-games-card-vic {
-  margin-left: 55px;
-  width: 87%;
+  width: 100%;
   background-repeat: no-repeat;
   background-color: #FFF;
   border-radius: 30px;
@@ -352,14 +316,9 @@ a {
   line-height: 32px;
 }
 
-footer {
-  background: #BDED35;
-  width: 100%;
-  background-size: contain;
-}
-
 .fill {
   height: 150px;
+  background-color: #BDED35;
   color: #000;
   text-align: center;
   font-family: Montserrat;
@@ -417,11 +376,8 @@ footer {
     width: 21px;
     position: absolute;
     height: 21px;
-    top: -9%;
-    left: 52%;
-  }
-  .group-stars {
-    display: none;
+    top: -2%;
+    left: 15%;
   }
   .header-heading {
     text-align: center;
@@ -440,38 +396,26 @@ footer {
     width: 296px;
   }
   .header-button {
-    width: 225px;
+    width: 285px;
     font-size: 16px;
     line-height: 23px;
     margin-top: 8px;
-    margin-left: 5px;
   }
   .header-box-scroll svg {
     width: 21px;
     height: 21px;
   }
   .header-box-scroll {
-    top: 649px;
-    height: 51px;
-    display: flex;
-    flex-direction: row;
-  }
-  .header-box-scroll li {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
     letter-spacing: 0.64px;
     text-transform: uppercase;
-    color: black;
     height: 51px;
-    padding-left: 12px;
-    padding-top: 15px;
-    margin-right: 6px;
-  }
-  .star {
-    margin-left: 26px;
-    margin-right: 0px;
+    padding-left: 17px;
+    margin-top: 132px;
+    gap: 27.4px;
   }
   .mini-games-heading {
     padding-top: 48px;
@@ -479,15 +423,14 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 49px;
-    margin-left: 16px;
   }
   .main {
     background: black;
   }
   .header-star {
-    position: relative;
-    right: 30%;
-    bottom: 8px;
+    position: absolute;
+    left: -7%;
+    top: -1%;
   }
   .header-big-upline,
   .header-big-midline,
@@ -505,12 +448,11 @@ footer {
   .header-big-smallstar svg {
     width: 18px;
     height: 18px;
-    position: relative;
-    left: 144%;
   }
   .header-big-smallstar {
     position: absolute;
-    top: 62.5%;
+    right: 86px;
+    top: 4%;
   }
   .header-big-star svg {
     width: 39px;
@@ -518,8 +460,8 @@ footer {
   }
   .header-big-star {
     position: absolute;
-    left: 80%;
-    top: 65%;
+    right: 32px;
+    top: 2%;
   }
   .header-mob {
     display: block;
@@ -533,7 +475,7 @@ footer {
     flex-wrap: wrap;
     gap: 24px;
     padding-top: 147px;
-    padding-left: 10%;
+    padding-left: 0;
   }
   .mini-games-cards {
     align-items: center;
@@ -550,7 +492,6 @@ footer {
     width: 343px;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
   }
   .game-card img {
     border-radius: 30px;

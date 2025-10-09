@@ -27,11 +27,9 @@ const people = [
     function filter(arr, ruleFunction) {
     const output = [];
 
-    for (let i = 0; i < arr.length; i++) {
-      if (ruleFunction(arr[i])) { 
-        output.push(arr[i]); 
-      }
-    }
+ for (let i = 0; i < arr.length; i++) {
+ output.push(ruleFunction(arr[i]));
+}
       
  return output;
  }
